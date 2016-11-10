@@ -7,6 +7,9 @@ package main.java.it.sevenbits.writer;
  */
 public class StringWriter implements IWriter {
 
+    /**
+     * comment
+     */
      public void write() {
 
     }

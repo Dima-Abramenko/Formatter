@@ -1,4 +1,5 @@
 package main.java.it.sevenbits.mainclass;
+
 import main.java.it.sevenbits.formatter.Formatter;
 import main.java.it.sevenbits.reader.FileReader;
 import main.java.it.sevenbits.writer.FileWriter;
@@ -9,11 +10,15 @@ import java.io.*;
  * Created by Dmitry on 08.11.2016.
  */
 public class MainClass {
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
+    public static void main(final String[] args) throws IOException {
 
-    public static void main(String[] args) throws IOException {
-
-        final String inputURL = "E:\\input.txt";
-        final String outputURL = "E:\\output.txt";
+        final String inputURL = "/home/oem/Документы/7bits-Java/input.txt";
+        final String outputURL = "/home/oem/Документы/7bits-Java/output.txt";
         String content;
         String formattedContent;
 
@@ -25,7 +30,8 @@ public class MainClass {
         formattedContent = formatter.format();
         System.out.println(formattedContent);
 
-        FileWriter fileWriter = new FileWriter(outputURL,formattedContent);
+
+        FileWriter fileWriter = new FileWriter(outputURL, formattedContent);
         fileWriter.write();
     }
 }
