@@ -7,5 +7,5 @@ public interface IWriter {
     /**
      *  entry method.
      */
-    void write();
+    void write(String _content);
 }

@@ -8,16 +8,14 @@ import java.io.PrintWriter;
  */
 public class FileWriter implements IWriter {
     private String URL;
-    private String content;
-    public FileWriter(final String _url, final String _content) {
+    public FileWriter(final String _url) {
         this.URL = _url;
-        this.content = _content;
     }
 
     /**
      * entry method.
      */
-    final public void write() {
+    final public void write(final String _content) {
         File file = new File(URL);
         try {
             if (!file.exists()) {
@@ -26,7 +24,7 @@ public class FileWriter implements IWriter {
 
             PrintWriter printWriter = new PrintWriter(file.getAbsolutePath());
             try {
-                printWriter.print(content);
+                printWriter.print(_content);
             } finally {
                 printWriter.close();
             }

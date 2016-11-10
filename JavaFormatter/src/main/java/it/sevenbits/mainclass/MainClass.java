@@ -1,8 +1,11 @@
 package main.java.it.sevenbits.mainclass;
 
 import main.java.it.sevenbits.formatter.Formatter;
+import main.java.it.sevenbits.formatter.IFormatter;
 import main.java.it.sevenbits.reader.FileReader;
+import main.java.it.sevenbits.reader.IReader;
 import main.java.it.sevenbits.writer.FileWriter;
+import main.java.it.sevenbits.writer.IWriter;
 
 import java.io.*;
 
@@ -19,19 +22,13 @@ public class MainClass {
 
         final String inputURL = "/home/oem/Документы/7bits-Java/input.txt";
         final String outputURL = "/home/oem/Документы/7bits-Java/output.txt";
-        String content;
-        String formattedContent;
 
-        FileReader fileReader = new FileReader(inputURL);
-        content = fileReader.read();
-        System.out.println(content);
-
-        Formatter formatter = new Formatter(content);
-        formattedContent = formatter.format();
-        System.out.println(formattedContent);
+        IReader fileReader = new FileReader(inputURL);
+        IWriter fileWriter = new FileWriter(outputURL);
+        IFormatter formatter = new Formatter();
+        formatter.format(fileReader, fileWriter);
 
 
-        FileWriter fileWriter = new FileWriter(outputURL, formattedContent);
-        fileWriter.write();
+
     }
 }
