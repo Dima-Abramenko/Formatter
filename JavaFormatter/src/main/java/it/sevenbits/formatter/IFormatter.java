@@ -2,12 +2,11 @@ package main.java.it.sevenbits.formatter;
 
 
 /**
- * Created by Dmitry on 09.11.2016.
+ * interface for formatting.
  */
 public interface IFormatter {
     /**
-     * comment
-     * @return
+     * returns method.
      */
     String format();
 }

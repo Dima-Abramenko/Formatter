@@ -7,12 +7,12 @@ import main.java.it.sevenbits.writer.FileWriter;
 import java.io.*;
 
 /**
- * Created by Dmitry on 08.11.2016.
+ * main class of the project.
  */
 public class MainClass {
     /**
-     *
-     * @param args
+     * Entry method.
+     * @param args command line args, ignored.
      * @throws IOException
      */
     public static void main(final String[] args) throws IOException {

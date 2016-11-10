@@ -1,4 +1,5 @@
 /**
- * Created by oem on 10.11.16.
+ * Package containing FileReader, IReader, StringReader.
  */
+
 package main.java.it.sevenbits.reader;

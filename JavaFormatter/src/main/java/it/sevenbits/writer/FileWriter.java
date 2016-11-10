@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 /**
- * Created by Dmitry on 09.11.2016.
+ *  writing formatted java-code in file.
  */
 public class FileWriter implements IWriter {
     private String URL;
@@ -15,7 +15,7 @@ public class FileWriter implements IWriter {
     }
 
     /**
-     * comment
+     * entry method.
      */
     final public void write() {
         File file = new File(URL);

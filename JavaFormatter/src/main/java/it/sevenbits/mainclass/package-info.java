@@ -1,4 +1,4 @@
 /**
- * Created by oem on 10.11.16.
+ * Package containing MainClass.
  */
 package main.java.it.sevenbits.mainclass;

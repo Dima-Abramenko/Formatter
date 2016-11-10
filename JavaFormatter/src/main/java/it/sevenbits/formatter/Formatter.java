@@ -2,7 +2,7 @@ package main.java.it.sevenbits.formatter;
 
 
 /**
- * Created by Dmitry on 09.11.2016.
+ * formatting input java-code.
  */
 public class Formatter implements IFormatter {
     private String content;
@@ -11,8 +11,7 @@ public class Formatter implements IFormatter {
     }
 
     /**
-     * 
-     * @return
+     * returns method.
      */
     final public String format() {
         String formatContent = content;

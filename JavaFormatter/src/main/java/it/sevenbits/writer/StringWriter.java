@@ -3,12 +3,12 @@ package main.java.it.sevenbits.writer;
 
 
 /**
- * Created by Dmitry on 09.11.2016.
+ * writing Java-code.
  */
 public class StringWriter implements IWriter {
 
     /**
-     * comment
+     * entry method.
      */
      public void write() {
 

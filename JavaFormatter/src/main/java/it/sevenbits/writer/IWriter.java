@@ -1,11 +1,11 @@
 package main.java.it.sevenbits.writer;
 
 /**
- * Created by Dmitry on 09.11.2016.
+ * interface for writing in file.
  */
 public interface IWriter {
     /**
-     * comment
+     *  entry method.
      */
     void write();
 }

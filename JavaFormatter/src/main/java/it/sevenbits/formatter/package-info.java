@@ -1,4 +1,4 @@
 /**
- * Created by oem on 10.11.16.
+ * Package containing Formatter, IFormatter.
  */
 package main.java.it.sevenbits.formatter;

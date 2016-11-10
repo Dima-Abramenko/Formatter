@@ -1,12 +1,12 @@
 package main.java.it.sevenbits.reader;
 
 /**
- * Created by Dmitry on 09.11.2016.
+ * reading java-code out if the String variable.
  */
 public class StringReader implements IReader {
     /**
      *
-     * @return
+     * returns method.
      */
     public String read() {
 

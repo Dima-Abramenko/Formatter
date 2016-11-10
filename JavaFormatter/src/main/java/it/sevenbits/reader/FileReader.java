@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Dmitry on 09.11.2016.
+ *  reading java-code out of the file.
  */
 public class FileReader implements IReader {
 
@@ -16,8 +16,7 @@ public class FileReader implements IReader {
     }
 
     /**
-     *
-     * @return
+     * returns method.
      */
    final public String read() {
 
